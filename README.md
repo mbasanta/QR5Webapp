@@ -1,5 +1,4 @@
-# qr5-webapp
-[![Build Status](https://travis-ci.org/mbasanta/QR5Webapp.svg)](https://travis-ci.org/mbasanta/QR5Webapp)
+# QR5Webapp [![Build Status](https://travis-ci.org/mbasanta/QR5Webapp.svg)](https://travis-ci.org/mbasanta/QR5Webapp)
 
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.11.1.
