@@ -8,10 +8,9 @@
  * Controller of the qr5WebappApp
  */
 angular.module('qr5WebappApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function ($scope, appConfig) {
     $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+      appConfig.apiurl,
+      appConfig.port
     ];
   });

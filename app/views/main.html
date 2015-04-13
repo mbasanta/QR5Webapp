@@ -1,23 +1,35 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
-
 <div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
+  <h4>QR5 Reviews</h4>
   <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+    Info about the table
   </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+  <ul>
+    <li ng-repeat="thing in awesomeThings">{{thing}}</li>
+  </ul>
+</div>
+<div>
+  <table datatable class="row-border hover">
+    <thead>
+      <tr>
+        <th>DFIRM Layer</th>
+        <th>FIRM Panel</th>
+        <th>Error Code</th>
+        <th>Error Desc</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>S_WTR_LN</td>
+        <td>39095C0009E</td>
+        <td>C2553</td>
+        <td>LN_TYP - Value in Database does not match FIRM</td>
+      </tr>
+      <tr>
+        <td>S_POL_LN</td>
+        <td>39095C0030E</td>
+        <td>C2506</td>
+        <td>LN_TYP - Value in Database does not match FIRM</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
