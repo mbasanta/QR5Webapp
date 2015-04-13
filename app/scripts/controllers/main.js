@@ -8,7 +8,7 @@
  * Controller of the qr5WebappApp
  */
 angular.module('qr5WebappApp')
-  .controller('MainCtrl', function ($scope, appConfig) {
+  .controller('MainCtrl', function ($scope, DTOptionsBuilder, DTColumnBuilder, appConfig) {
     $scope.awesomeThings = [
       appConfig.apiurl,
       appConfig.port
