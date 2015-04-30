@@ -17,11 +17,11 @@ angular.module('qr5WebappApp')
       controllerAs: 'vm',
       bindToController: true,
       controller: function ($scope, DTOptionsBuilder, DTColumnBuilder, appConfig) {
-
+        var url = appConfig.apiurl + appConfig.port + appConfig.apiendpoint
         this.dtOptions = DTOptionsBuilder.newOptions()
           .withOption('ajax', {
-            'url': appConfig.apiurl + ':' + appConfig.port,
-            'type': 'POST'
+            'url': url,
+            'type': 'GET'
           })
           .withDataProp('data')
           .withOption('processing', true)

@@ -10,5 +10,6 @@
 angular.module('qr5WebappApp')
   .constant('appConfig', {
     'apiurl': 'http://localhost',
-    'port': 5000
+    'port': ':5000',
+    'apiendpoint': '/datatable/'
   });
