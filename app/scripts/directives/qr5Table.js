@@ -23,7 +23,10 @@ angular.module('qr5WebappApp')
         this.dtOptions = DTOptionsBuilder.newOptions()
           .withOption('ajax', {
             'url': url,
-            'type': 'GET'
+            'type': 'GET',
+            'data': {
+              'detailsLink': $scope.vm.detailsLink
+            }
           })
           .withDataProp('data')
           .withOption('processing', true)
